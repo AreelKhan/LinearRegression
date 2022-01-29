@@ -26,38 +26,25 @@ theta = original_parameters
 # Hypothesis Function
 def h(parameters, inp):
     """
-    This is the hypothesis function. The parameters are model weights, theta, and the inp is the training example.
+    This is the hypothesis function.
+    parameters are the model weights, theta.
+    inp is the i-th training example.
+
     :param parameters: numpy.ndarray
     :param inp: numpy.ndarray
-    :return:
+    :return: float
     """
     return np.dot(parameters, inp)
 
 
+def gradient_descent(parameters, examples, labels, hypothesis, learning_rate, epochs):
+    summation = 0
+    for i in range(len(examples)):
+        summation += hypothesis(parameters, examples.iloc[i]) - labels.iloc[i]
+    parameters = parameters - learning_rate/len(examples) * summation * examples.iloc[]
+
 # Value of derivative of cost function
-costs = [h(theta, X_train.iloc[i]) - y_train.iloc[i] for i in range(len(X_train))]
-average_cost = 1 / m * np.array(costs).sum()
-
-print(X_train.iloc[0])
-
+costs = [X_train.iloc[i] * (h(theta, X_train.iloc[i]) - y_train.iloc[i]) for i in range(len(X_train))]
 
 # TODO: Figure out the gradient descent for loop portion
 # TODO: add docs for avg_cost function
-def avg_cost(parameters, train, test):
-    output = np.zeros_like(parameters)
-    print(type(output))
-    for i in range(len(X_train)):
-        ((h(parameters, train.iloc[i]) - test.iloc[i]) * train.iloc[i])
-    return output
-
-
-print(avg_cost(theta, X_train, X_test))
-
-# Learning rate - alpha
-alpha = 1
-
-# Gradient Descent
-theta = theta - alpha * average_cost * X_train
-
-print(original_parameters)
-print(theta)
