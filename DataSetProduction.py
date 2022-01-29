@@ -5,24 +5,24 @@ algorithm implementation instead of the limited abilities of linear regression t
 
 
 # First Relation
-def func_one(input):
+def func_one(x):
     """
     This is a very simple linear mapping. Scales the input by 2.
 
-    :param input: int or float or numpy.ndarray.
+    :param x: int or float or numpy.ndarray.
     :return: float
     """
-    return 2 * input
+    return 2 * x
 
 
 # Second Relation
-def func_two(input):
+def func_two(x):
     """
     This is a very simple linear mapping. Scales the input by -1 and adds 3.
 
-    :param input: int or float or numpy.ndarray.
+    :param x: int or float or numpy.ndarray.
     :return: float
     """
-    return -1 * input + 3
+    return -1 * x + 3
 
 
