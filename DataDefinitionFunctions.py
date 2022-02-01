@@ -17,7 +17,7 @@ def double(x):
 
 
 # Second Relation
-def double_plus1(x):
+def double_plus_one(x):
     """
     This is a very simple linear mapping. Scales the input by 2 and adds 1.
 
