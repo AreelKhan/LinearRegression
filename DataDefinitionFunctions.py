@@ -8,9 +8,9 @@ data sets with simple relations to test the linear regression implementation"""
 # First Relation
 def double(x):
     """
-    This is a very simple linear mapping. Scales the input by 2.
+    Scales the input by 2.
 
-    :param x: int or float or numpy.ndarray.
+    :param x: int or float or numpy.ndarray
     :return: float
     """
     return 2 * x
@@ -19,11 +19,20 @@ def double(x):
 # Second Relation
 def double_plus_one(x):
     """
-    This is a very simple linear mapping. Scales the input by 2 and adds 1.
+    Scales the input by 2 and adds 1.
 
-    :param x: int or float or numpy.ndarray.
+    :param x: int or float or numpy.ndarray
     :return: float
     """
     return 2 * x + 1
 
 
+def negate_plus_double(x_1, x_2):
+    """
+    Scales x_1 by -1 and adds it to 2 times x_2.
+
+    :param x_1: int or float or numpy.ndarray
+    :param x_2: int or float or numpy.ndarray
+    :return: float
+    """
+    return -x_1 + 2 * x_2
