@@ -1,4 +1,5 @@
-### WORK IN PROGRESS 
-This is an implementation of linear regression from scratch.  
-The goal is to use as little external help and libraries/packages.  
-I want to work with linear regression at the lowest level possible, down to the fractions and derivatives.
+# Linear Regression
+An implementation of linear regression from scratch. I want to work with linear regression at the lowest level possible, down to the fractions and derivatives.  
+The goal is to use as little external help and libraries/packages. I have allowed myself only the numpy library to develop the linear regression algorithm. However, the model is evaluated using sklearn and pandas.  
+
+To get a full understanding of my implementation, follow this link to my [personal website](https://areel.notion.site/).
