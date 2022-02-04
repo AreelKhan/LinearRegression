@@ -5,34 +5,37 @@ limited capabilities of linear regression to model a complex relation. The funct
 data sets with simple relations to test the linear regression implementation"""
 
 
-# First Relation
-def double(x):
-    """
-    Scales the input by 2.
+class Functions:
 
-    :param x: int or float or numpy.ndarray
-    :return: float
-    """
-    return 2 * x
+    # First Relation
+    @staticmethod
+    def double(x):
+        """
+        Scales the input by 2.
 
+        :param x: int or float or numpy.ndarray
+        :return: float
+        """
+        return 2 * x
 
-# Second Relation
-def double_plus_one(x):
-    """
-    Scales the input by 2 and adds 1.
+    # Second Relation
+    @staticmethod
+    def double_plus_one(x):
+        """
+        Scales the input by 2 and adds 1.
 
-    :param x: int or float or numpy.ndarray
-    :return: float
-    """
-    return 2 * x + 1
+        :param x: int or float or numpy.ndarray
+        :return: float
+        """
+        return 2 * x + 1
 
+    @staticmethod
+    def negate_plus_double(x_1, x_2):
+        """
+        Scales x_1 by -1 and adds it to 2 times x_2.
 
-def negate_plus_double(x_1, x_2):
-    """
-    Scales x_1 by -1 and adds it to 2 times x_2.
-
-    :param x_1: int or float or numpy.ndarray
-    :param x_2: int or float or numpy.ndarray
-    :return: float
-    """
-    return -x_1 + 2 * x_2
+        :param x_1: int or float or numpy.ndarray
+        :param x_2: int or float or numpy.ndarray
+        :return: float
+        """
+        return -x_1 + 2 * x_2

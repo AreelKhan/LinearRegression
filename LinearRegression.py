@@ -24,7 +24,6 @@ class LinearRegression:
         theta = np.ones(shape=num_features + 1)
         x_0 = np.ones_like(labels)
         x = np.column_stack([x_0, train_data])
-
         for _ in tqdm(range(epochs)):
             cost = np.dot(x, theta) - labels
             theta = theta - (learning_rate * (1 / len(labels)) * np.dot(x.T, cost))
