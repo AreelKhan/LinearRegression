@@ -42,7 +42,7 @@ class LinearRegression:
         Make predictions using the trained linear regression model.
 
         Constraints:
-        .fit method must be called first
+        fit() method must be called first
 
         :param X: numpy.ndarray
             The data on which to make predictions
