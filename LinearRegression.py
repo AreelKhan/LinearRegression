@@ -49,9 +49,12 @@ class LinearRegression:
         :return: y_pred
             The predictions on the data
         """
-        y_pred = []
+        if not self.parameters:
+            print("fit() method must be called first")
+            return None
         if self.num_features == 1:
             X = X.reshape((len(X), 1))
+        y_pred = []
         for i in range(len(X)):
             pred = np.dot(self.parameters, np.insert(X[i], 0, 1))
             y_pred.append(pred)
