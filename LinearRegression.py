@@ -49,7 +49,7 @@ class LinearRegression:
         :return: y_pred
             The predictions on the data
         """
-        if not self.parameters:
+        if type(self.parameters) is None:
             print("fit() method must be called first")
             return None
         if self.num_features == 1:
